@@ -16,8 +16,10 @@ export const Home = () => {
         </div>
         <div>
             <Grid container spacing={2} justify="center">
-                <Grid item>
-
+                <Grid item xs={6}>
+                    <Typography variant='h5' align='left' color='textPrimary' paragraph>
+                        Hi everyone, this is a test and hopefully it works!
+                    </Typography>
                 </Grid>
 
             </Grid>
