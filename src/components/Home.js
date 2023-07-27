@@ -9,42 +9,46 @@ export const Home = () => {
     return (
 
         <CssBaseline>
-        <div>
+        <Container maxWidth='xl' sx={{ bgcolor: '#f44336', height: "100vh" }}>
+            <div>
 
-            {/* Welcome Container */}
-            <Container maxWidth='sm' style={{ marginTop: '100px' }} sx={{ bgcolor: 'tomato' }}>
-                <Typography variant='h3' align='center' color='textPrimary' gutterBottom>
-                    Welcome!
-                </Typography>
-            </Container>
-        </div>
-        <div>
-            {/* Intro Text Container */}
-            <Grid container spacing={2} justify="center">
-                <Grid item xs={6}>
-                    <Typography variant='h5' align='center' color='textSecondary' paragraph>
-                        Hi everyone, this is a test and hopefully it works!
+                {/* Welcome Container */}
+                <Container maxWidth='xl' style={{ marginTop: '100px' }} sx={{ bgcolor: 'tomato' }}>
+                    <Typography variant='h3' align='center' color='textPrimary' gutterBottom>
+                        Welcome!
                     </Typography>
-                </Grid>
-                {/* Intro Img Container */}
-                <Grid item xs={6}>
-                    <img src={image3} style={{ width: 300, height: 400 }}  align='center' alt='Nicholas Miller'></img>
-                </Grid> 
-            </Grid>
-        </div>
-        <div>
-            {/* Newest Project Container */}
-            <Container>
-                <Grid container spacing={2} justify='center'>
-                    <Grid item xs={6}>
-
+                </Container>
+            </div>
+            <div>
+                {/* Intro Text Container */}
+                <Container maxWidth='xl' style={{ marginTop: '100px' }} sx={{ bgcolor: 'tomato' }}>
+                    <Grid container spacing={2} justify="center">
+                        <Grid item xs={6}>
+                            <Typography variant='h5' align='center' color='textSecondary' paragraph>
+                                Hi everyone, this is a test and hopefully it works!
+                            </Typography>
+                        </Grid>
+                        {/* Intro Img Container */}
+                        <Grid item xs={6}>
+                            <img src={image3} style={{ width: 300, height: 400 }}  align='center' alt='Nicholas Miller'></img>
+                        </Grid> 
                     </Grid>
-                    <Grid item xs={6}>
+                </Container>
+            </div>
+            <div>
+                {/* Newest Project Container */}
+                <Container>
+                    <Grid container spacing={2} justify='center'>
+                        <Grid item xs={6}>
 
+                        </Grid>
+                        <Grid item xs={6}>
+
+                        </Grid>
                     </Grid>
-                </Grid>
-            </Container>
-        </div>
+                </Container>
+            </div>
+        </Container>
         </CssBaseline>
     )
 }
