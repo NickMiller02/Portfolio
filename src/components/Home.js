@@ -1,7 +1,7 @@
 // Imports - React & Material UI
 import React from 'react';
-import { Typography, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Container } from '@mui/material';
-import image3 from '../assets/images/image3.jpeg';
+import { Typography, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Container, Box } from '@mui/material';
+
 
 // Home Function
 export const Home = () => {
@@ -9,45 +9,27 @@ export const Home = () => {
     return (
 
         <CssBaseline>
-        <Container maxWidth='xl' sx={{ bgcolor: '#f44336', height: "100vh" }}>
-            <div>
-
-                {/* Welcome Container */}
-                <Container maxWidth='xl' style={{ marginTop: '100px' }} sx={{ bgcolor: 'tomato' }}>
-                    <Typography variant='h3' align='center' color='textPrimary' gutterBottom>
-                        Welcome!
-                    </Typography>
-                </Container>
-            </div>
-            <div>
-                {/* Intro Text Container */}
-                <Container maxWidth='xl' style={{ marginTop: '100px' }} sx={{ bgcolor: 'tomato' }}>
-                    <Grid container spacing={2} justify="center">
-                        <Grid item xs={6}>
-                            <Typography variant='h5' align='center' color='textSecondary' paragraph>
-                                Hi everyone, this is a test and hopefully it works!
-                            </Typography>
-                        </Grid>
-                        {/* Intro Img Container */}
-                        <Grid item xs={6}>
-                            <img src={image3} style={{ width: 300, height: 400 }}  align='center' alt='Nicholas Miller'></img>
-                        </Grid> 
-                    </Grid>
-                </Container>
-            </div>
-            <div>
-                {/* Newest Project Container */}
-                <Container>
-                    <Grid container spacing={2} justify='center'>
-                        <Grid item xs={6}>
-
-                        </Grid>
-                        <Grid item xs={6}>
-
-                        </Grid>
-                    </Grid>
-                </Container>
-            </div>
+        <Container
+            sx={{
+                height: "100vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                bgcolor: "tomato",
+            }}
+        >
+            <Container>
+                <Box sx={{ 
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "column" },
+                    justifyContent: "flex",
+                    bgcolor: "blueviolet"
+                    }}
+                >
+                    <Typography variant='h4' sx={{ alignItems: "left" }}>Hey, I'm Nick</Typography>
+                    <Typography variant='h2' sx={{ alignItems: "left" }}>And I love creating and building</Typography>
+                </Box>
+            </Container>
         </Container>
         </CssBaseline>
     )

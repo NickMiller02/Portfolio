@@ -12,7 +12,7 @@ export const Nav = () => {
         <>  
             {/* Styles Nav Bar */}
             <CssBaseline />
-            <AppBar position="static">
+            <AppBar sx={{ display: "flex" }}>
                 <Toolbar>
                     <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
                         Nick's Portfolio
