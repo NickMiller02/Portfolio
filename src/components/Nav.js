@@ -1,7 +1,8 @@
 // Imports - React & Material UI
 import React from 'react';
+import theme from '..';
 import { Link } from 'react-router-dom';
-import { Typography, AppBar, CssBaseline, Toolbar, Stack } from '@mui/material';
+import { Typography, AppBar, CssBaseline, Toolbar, Stack, Button } from '@mui/material';
 
 
 // Nav Function
@@ -12,7 +13,7 @@ export const Nav = () => {
         <>  
             {/* Styles Nav Bar */}
             <CssBaseline />
-            <AppBar sx={{ display: "flex" }}>
+            <AppBar sx={{ display: "flex", bgcolor: theme.palette.secondary.main }}>
                 <Toolbar>
                     <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
                         Nick's Portfolio
@@ -20,10 +21,18 @@ export const Nav = () => {
 
                     {/* Lists and Links each page/tab */}
                     <Stack direction='row' spacing={2}>
-                        <Link to='/'>Home</Link>
-                        <Link to='portfolio'>Portfolio</Link>
-                        <Link to='resume'>Resume</Link>
-                        <Link to='contact'>Contact</Link>
+                        <Link to='/'>
+                            <Button variant='contained'>Home</Button>
+                        </Link>
+                        <Link to='portfolio'>
+                            <Button variant='contained'>Portfolio</Button>
+                        </Link>
+                        <Link to='resume'>
+                            <Button variant='contained'>Resume</Button>
+                        </Link>
+                        <Link to='contact'>
+                            <Button variant='contained'>Contact</Button>
+                        </Link>
                     </Stack>
                 </Toolbar>
             </AppBar>

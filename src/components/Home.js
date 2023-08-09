@@ -1,7 +1,7 @@
 // Imports - React & Material UI
 import React from 'react';
 import { Typography, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Container, Box } from '@mui/material';
-
+import theme from '..';
 
 // Home Function
 export const Home = () => {
@@ -14,8 +14,7 @@ export const Home = () => {
                 height: "100vh",
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
-                bgcolor: "tomato",
+                bgcolor: theme.palette.primary.dark,
             }}
         >
             <Container>
@@ -23,11 +22,13 @@ export const Home = () => {
                     display: "flex",
                     flexDirection: { xs: "column", md: "column" },
                     justifyContent: "flex",
-                    bgcolor: "blueviolet"
+                    bgcolor: theme.palette.primary.dark
                     }}
                 >
-                    <Typography variant='h4' sx={{ alignItems: "left" }}>Hey, I'm Nick</Typography>
-                    <Typography variant='h2' sx={{ alignItems: "left" }}>And I love creating and building</Typography>
+                    <Typography variant='h4' sx={{ alignItems: "left" }}>Hi, I'm Nick,</Typography>
+                    <Typography variant='h2' sx={{ alignItems: "left" }}>And I love creating and building 
+                    
+                    </Typography>
                 </Box>
             </Container>
         </Container>
