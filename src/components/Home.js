@@ -1,15 +1,23 @@
 // Imports - React & Chakra UI
-import { Box } from '@chakra-ui/react';
 import React from 'react';
-
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Box, Flex, Stack, useMediaQuery } from '@chakra-ui/react';
 
 // Home Function
 export const Home = () => {
     
-    return (
-        <Box>
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
-        </Box>
+    return (
+        <Stack>
+            <Flex direction={isNotSmallerScreen ? "row" : "column"} 
+            spacing="200px" p={isNotSmallerScreen ? '32' : "0"} 
+            alignSelf="flex-start">
+                <Box mt={isNotSmallerScreen ? '0' : 16} align="flex-start">
+                    
+                </Box>
+            </Flex>
+        </Stack>
     )
 }
 
