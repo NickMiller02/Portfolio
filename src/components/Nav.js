@@ -1,33 +1,28 @@
 // Imports - React & Material UI
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Typography, AppBar, CssBaseline, Toolbar, Stack } from '@mui/material';
+import { useColorMode } from '@chakra-ui/color-mode'
+import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { TabList, TabPanels, TabPanel, Tab, Flex, Box, IconButton, Spacer } from '@chakra-ui/react';
+
+
 
 
 // Nav Function
 export const Nav = () => {
 
-
+    const { colorMode, toggleColorMode } = useColorMode();
+    const isDark = colorMode === 'dark';
     return (
-        <>  
-            {/* Styles Nav Bar */}
-            <CssBaseline />
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-                        Nick's Portfolio
-                    </Typography>
+        <Box h='60px' w='100%'>
+            <Flex w='100%'>
+                <a href='/'>Home</a>
+                <a href='/portfolio'>Portfolio</a>
+                <a href='/resume'>Resume</a>
 
-                    {/* Lists and Links each page/tab */}
-                    <Stack direction='row' spacing={2}>
-                        <Link to='/'>Home</Link>
-                        <Link to='portfolio'>Portfolio</Link>
-                        <Link to='resume'>Resume</Link>
-                        <Link to='contact'>Contact</Link>
-                    </Stack>
-                </Toolbar>
-            </AppBar>
-        </>
+                <Spacer></Spacer>
+                <IconButton mt={2} mr={2} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
+            </Flex>
+        </Box>
     )
 }
 
