@@ -19,12 +19,17 @@ export const Home = () => {
                 </Box>
             </Flex>
             <Box bgColor="#2b6cb0" minW="100%">
-                <Box p="5" m={isNotSmallerScreen ? '16' : 16} align="center" border="2px" boxShadow="xl" rounded="md">
-                    <Text fontSize="25px" fontWeight="bold">Check Out My Most Recent Project!</Text>
-                    <HStack>
-                    
-                    </HStack>
-                </Box>
+                <HStack>
+                    <Box p="1" m={isNotSmallerScreen ? '16' : 32} align="center" border="2px" boxShadow="xl" rounded="md">
+                        <Text fontSize="25px" fontWeight="bold">Check Out My Most Recent Project!</Text>
+                    </Box>
+                    <Box p="1" m={isNotSmallerScreen ? '16' : 32} align="center" border="2px" boxShadow="xl" rounded="md">
+                        <Text fontSize="25px" fontWeight="bold">Check Out My Most Recent Project!</Text>
+                    </Box>
+                    <Box p="1" m={isNotSmallerScreen ? '16' : 32} align="center" border="2px" boxShadow="xl" rounded="md">
+                        <Text fontSize="25px" fontWeight="bold">Check Out My Most Recent Project!</Text>
+                    </Box>
+                </HStack>
             </Box>
         </Stack>
     )
