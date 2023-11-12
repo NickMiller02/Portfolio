@@ -23,30 +23,14 @@ export const Home = () => {
                     <Text fontSize='50px' fontWeight="bold"> Nick Miller </Text>
                 </Box>
             </Flex>
-            <Box bgColor={isDark ? 'gray.700' : "#2b6cb0"} minW="100%" alignItems='center'>
-                <HStack spacing={1} alignItems='center'>
-                    <Flex direction={isNotSmallerScreen ? "row" : "column"} 
-                        spacing="200px" p={isNotSmallerScreen ? '32' : "0"} 
-                        alignSelf="flex-start">
-                        <Box p="1" m={isNotSmallerScreen ? '16' : 32} bgColor={isDark ? 'gray.600' : 'gray.100'} alignSelf="flex-start" border="2px" boxShadow="xl" rounded="md">
+            <Box bgColor={isDark ? 'gray.700' : "#2b6cb0"} minW="100%">
+                <HStack spacing={1} alignContent='center'>
+                        <Box p="1" m={isNotSmallerScreen ? '16' : 32} bgColor={isDark ? 'gray.600' : 'gray.100'} alignSelf="center" border="2px" boxShadow="xl" rounded="md">
                             <Stack>
                                 <Box m='1.5' w='200px' h='200px' bgColor='red.100' alignSelf='center' />
                                 <Text fontSize='25px' fontWeight="semibold">Title of Project</Text>
                             </Stack>
                         </Box>
-                        <Box p="1" m={isNotSmallerScreen ? '16' : 32} bgColor={isDark ? 'gray.600' : 'gray.100'} alignSelf="flex-start" border="2px" boxShadow="xl" rounded="md">
-                            <Stack>
-                                <Box m='1.5' w='200px' h='200px' bgColor='red.100' alignSelf='center' />
-                                <Text fontSize='25px' fontWeight="semibold">Title of Project</Text>
-                            </Stack>
-                        </Box>
-                        <Box p="1" m={isNotSmallerScreen ? '16' : 32} bgColor={isDark ? 'gray.600' : 'gray.100'} alignSelf="flex-start" border="2px" boxShadow="xl" rounded="md">
-                            <Stack>
-                                <Box m='1.5' w='200px' h='200px' bgColor='red.100' alignSelf='center' />
-                                <Text fontSize='25px' fontWeight="semibold">Title of Project</Text>
-                            </Stack>
-                        </Box>
-                    </Flex>
                 </HStack>
             </Box>
             <HStack>
