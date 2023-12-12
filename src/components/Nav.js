@@ -1,8 +1,8 @@
 // Imports - React & Material UI
 import React from 'react';
-import { useColorMode } from '@chakra-ui/color-mode'
-import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { TabList, TabPanels, TabPanel, Tab, Flex, Box, IconButton, Spacer } from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/color-mode';
+import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Flex, Box, IconButton, Spacer } from '@chakra-ui/react';
 
 
 
